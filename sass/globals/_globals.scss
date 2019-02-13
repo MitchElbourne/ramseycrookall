@@ -1,6 +1,10 @@
 a {
-	&:hover {
+	color: $text-black;
+	transition: color 200ms linear;
+	&:hover, &:focus {
+		color: $dark-blue;
 		text-decoration: none;
+		transition: color 200ms linear;
 	}
 }
 section {
@@ -24,4 +28,13 @@ ul {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+}
+
+.cta-blue {
+	background-color: $dark-blue;
+	color: white;
+	margin-left: auto;
+	border-radius: 4px;
+	padding: 0.66rem 1rem;
+	font-family: $unit-roundedBd;
 }

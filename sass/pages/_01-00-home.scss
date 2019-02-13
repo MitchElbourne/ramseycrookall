@@ -14,14 +14,6 @@ header {
     }
     ul {
       width: 100%;
-      .cta-contact {
-        background-color: $dark-blue;
-        color: white;
-        margin-left: auto;
-        border-radius: 4px;
-        padding: 0.66rem 1rem;
-        font-family: $unit-roundedBd;
-      }
     }
   }
 }
@@ -88,6 +80,44 @@ footer {
               padding-left: 1rem;
               &:first-of-type {
                 padding-left: 0;
+              }
+              a {
+                color: $text-black;
+                transition: color 200ms linear;
+                &:hover, &:focus {
+                  color: $dark-blue;
+                  transition: color 200ms linear;
+                }
+              }
+            }
+          }
+        }
+        @include media-breakpoint-down(md) {
+          .copyright {
+            padding-right: 2rem;
+          }
+          .privacy {
+            .legal-row {
+              .legal-item {
+                margin-left: auto;
+                align-self: baseline;
+                &:last-of-type {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          .privacy {
+            margin-top: 1rem;
+            .legal-row {
+              .legal-item {
+                margin-left: 0;
+                &:last-of-type {
+                  padding-left: 1rem;
+                }
               }
             }
           }

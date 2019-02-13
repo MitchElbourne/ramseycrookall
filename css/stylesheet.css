@@ -82,8 +82,13 @@ p, span, a {
   font-family: "soleilRg", "system", "sans-serif";
   font-size: 1rem; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #131d26;
+  transition: color 200ms linear; }
+  a:hover, a:focus {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 200ms linear; }
 
 section {
   padding: 6.33rem 0; }
@@ -103,6 +108,14 @@ ul {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
+.cta-blue {
+  background-color: #0066cc;
+  color: white;
+  margin-left: auto;
+  border-radius: 4px;
+  padding: 0.66rem 1rem;
+  font-family: "unit-roundedBd", "system", "sans-serif"; }
+
 header {
   background-color: transparent;
   max-width: 2000px;
@@ -118,13 +131,6 @@ header {
       width: 10rem; }
     header nav ul {
       width: 100%; }
-      header nav ul .cta-contact {
-        background-color: #0066cc;
-        color: white;
-        margin-left: auto;
-        border-radius: 4px;
-        padding: 0.66rem 1rem;
-        font-family: "unit-roundedBd", "system", "sans-serif"; }
 
 main section#splash {
   background-image: url("../assets/home-splash.svg");
@@ -169,3 +175,26 @@ footer section#container-bottom {
         padding-left: 1rem; }
         footer section#container-bottom .container .content .privacy .legal-row .legal-item:first-of-type {
           padding-left: 0; }
+        footer section#container-bottom .container .content .privacy .legal-row .legal-item a {
+          color: #131d26;
+          transition: color 200ms linear; }
+          footer section#container-bottom .container .content .privacy .legal-row .legal-item a:hover, footer section#container-bottom .container .content .privacy .legal-row .legal-item a:focus {
+            color: #0066cc;
+            transition: color 200ms linear; }
+    @media (max-width: 991px) {
+      footer section#container-bottom .container .content .copyright {
+        padding-right: 2rem; }
+      footer section#container-bottom .container .content .privacy .legal-row .legal-item {
+        margin-left: auto;
+        align-self: baseline; }
+        footer section#container-bottom .container .content .privacy .legal-row .legal-item:last-of-type {
+          padding-left: 0; } }
+    @media (max-width: 767px) {
+      footer section#container-bottom .container .content {
+        flex-direction: column; }
+        footer section#container-bottom .container .content .privacy {
+          margin-top: 1rem; }
+          footer section#container-bottom .container .content .privacy .legal-row .legal-item {
+            margin-left: 0; }
+            footer section#container-bottom .container .content .privacy .legal-row .legal-item:last-of-type {
+              padding-left: 1rem; } }
