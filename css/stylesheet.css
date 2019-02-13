@@ -1,0 +1,171 @@
+@import url("https://p.typekit.net/p.css?s=1&k=akb4qev&ht=tk&f=17001.17005.39722.39729&a=8622106&app=typekit&e=css");
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+@font-face {
+  font-family: "soleilBd";
+  src: url("https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "soleilRg";
+  src: url("https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "unit-roundedBd";
+  src: url("https://use.typekit.net/af/d9b8f0/00000000000000003b9b212a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/d9b8f0/00000000000000003b9b212a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/d9b8f0/00000000000000003b9b212a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "unit-roundedRg";
+  src: url("https://use.typekit.net/af/73fcab/00000000000000003b9b2131/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/73fcab/00000000000000003b9b2131/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/73fcab/00000000000000003b9b2131/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400; }
+h1, .h1 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 3.137rem;
+  line-height: 1.45; }
+  @media (max-width: 991px) {
+    h1, .h1 {
+      font-size: 2.369rem; } }
+  @media (max-width: 767px) {
+    h1, .h1 {
+      font-size: 1.77rem; } }
+
+h2, .h2 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 2.369rem;
+  line-height: 1.45; }
+  @media (max-width: 991px) {
+    h2, .h2 {
+      font-size: 1.777rem; } }
+  @media (max-width: 767px) {
+    h2, .h2 {
+      font-size: 1.33rem; } }
+
+h3, .h3 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 1.777rem;
+  line-height: 1.45; }
+  @media (max-width: 991px) {
+    h3, .h3 {
+      font-size: 1.333rem; } }
+  @media (max-width: 767px) {
+    h3, .h3 {
+      font-size: 1rem; } }
+
+h4, .h4 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 1.333rem;
+  line-height: 1.45; }
+  @media (max-width: 991px) {
+    h4, .h4 {
+      font-size: 1rem; } }
+  @media (max-width: 767px) {
+    h4, .h4 {
+      font-size: 0.9rem; } }
+
+h5, .h5 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 1rem;
+  line-height: 1.45; }
+
+h6, .h6 {
+  font-family: "soleilBd", "system", "sans-serif";
+  font-size: 0.75rem;
+  line-height: 1.45; }
+
+p, span, a {
+  font-family: "soleilRg", "system", "sans-serif";
+  font-size: 1rem; }
+
+a:hover {
+  text-decoration: none; }
+
+section {
+  padding: 6.33rem 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+  ul li {
+    padding: 0; }
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+header {
+  background-color: transparent;
+  max-width: 2000px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 1.5rem 0 1.5rem 0;
+  z-index: 99;
+  flex-direction: row; }
+  header nav {
+    width: 100%; }
+    header nav .navbar-brand {
+      width: 10rem; }
+    header nav ul {
+      width: 100%; }
+      header nav ul .cta-contact {
+        background-color: #0066cc;
+        color: white;
+        margin-left: auto;
+        border-radius: 4px;
+        padding: 0.66rem 1rem;
+        font-family: "unit-roundedBd", "system", "sans-serif"; }
+
+main section#splash {
+  background-image: url("../assets/home-splash.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 33rem;
+  position: relative; }
+  main section#splash .cloud-background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain; }
+
+footer section#container-top {
+  background-color: #131d26; }
+  footer section#container-top .container .content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    footer section#container-top .container .content p {
+      color: white; }
+footer section#container-bottom {
+  background-color: white;
+  padding: 3rem 0; }
+  footer section#container-bottom .container .content {
+    display: flex;
+    justify-content: space-between; }
+    footer section#container-bottom .container .content .copyright p {
+      margin: 0;
+      color: #71777d; }
+    footer section#container-bottom .container .content .privacy .legal-row {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%; }
+      footer section#container-bottom .container .content .privacy .legal-row .legal-item {
+        align-self: center;
+        padding-left: 1rem; }
+        footer section#container-bottom .container .content .privacy .legal-row .legal-item:first-of-type {
+          padding-left: 0; }
