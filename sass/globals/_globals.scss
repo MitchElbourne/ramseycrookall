@@ -8,7 +8,7 @@ a {
 	}
 }
 section {
-  padding: 6.33rem 0;
+  padding: 3.33rem 0;
 }
 
 ul {
@@ -19,6 +19,9 @@ ul {
 	}
 }
 
+html {
+	font-size: 18px;
+}
 
 *,
 *:after,
@@ -35,6 +38,8 @@ ul {
 	color: white;
 	margin-left: auto;
 	border-radius: 4px;
-	padding: 0.66rem 1rem;
+	padding: 0.66rem 1.2rem;
 	font-family: $unit-roundedBd;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
