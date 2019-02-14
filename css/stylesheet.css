@@ -118,7 +118,6 @@ header {
 
 main .content {
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
   flex-direction: column; }
 main section#splash {
@@ -126,12 +125,12 @@ main section#splash {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 40rem;
   position: relative; }
   main section#splash .cloud-background {
     position: absolute;
     width: 100%;
-    bottom: 0;
-    height: 30rem;
+    bottom: -1px;
     background-repeat: no-repeat;
     background-position: cover;
     background-size: contain; }
@@ -193,6 +192,13 @@ main section#how-it-works .container .row .panel-container {
         margin: 0; }
       main section#how-it-works .container .row .panel-container .panel .panel-content .text {
         margin: 1rem 0 2rem; }
+      main section#how-it-works .container .row .panel-container .panel .panel-content .disclaimer {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 1.33rem;
+        border: 1px solid #99ccff;
+        border-radius: 4px;
+        line-height: 1.6; }
       main section#how-it-works .container .row .panel-container .panel .panel-content .cta-blue {
         margin: 0 auto; }
   @media (max-width: 1199px) {
@@ -211,6 +217,41 @@ main section#how-it-works .container .row .panel-container {
       main section#how-it-works .container .row .panel-container .panel .image-wrapper {
         width: 50%;
         margin: 0 auto; } }
+main section#splash-bottom {
+  background-image: url("../assets/home-splash.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 51rem;
+  position: relative;
+  display: flex;
+  align-content: center; }
+  main section#splash-bottom .cloud-background {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain; }
+  main section#splash-bottom .content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center; }
+    main section#splash-bottom .content .title, main section#splash-bottom .content .text {
+      color: white; }
+    main section#splash-bottom .content .text {
+      line-height: 1.5;
+      font-family: "unit-roundedRg", "system", "sans-serif"; }
+    main section#splash-bottom .content .cta-blue {
+      margin: 1.66rem auto 0; }
+  @media (max-width: 1199px) {
+    main section#splash-bottom {
+      height: 40rem; }
+      main section#splash-bottom .content {
+        top: 45%; } }
 
 footer section#container-top {
   background-color: #131d26; }

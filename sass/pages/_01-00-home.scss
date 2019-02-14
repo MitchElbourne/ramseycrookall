@@ -23,7 +23,6 @@ header {
 main {
   .content {
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
   }
@@ -32,13 +31,12 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    // height: 33rem;
+    height: 40rem;
     position: relative;
     .cloud-background {
       position: absolute;
       width: 100%;
-      bottom: 0;
-      height: 30rem;
+      bottom: -1px;
       background-repeat: no-repeat;
       background-position: cover;
       background-size: contain;
@@ -141,6 +139,14 @@ main {
               .text {
                 margin: 1rem 0 2rem;
               }
+              .disclaimer {
+                font-size: 0.8rem;
+                margin: 0;
+                padding: 1.33rem;
+                border: 1px solid $disclaimer-blue;
+                border-radius: 4px;
+                line-height: 1.6;
+              }
               .cta-blue {
                 margin: 0 auto;
               }
@@ -175,6 +181,48 @@ main {
             }
           }
         }
+      }
+    }
+  }
+  section#splash-bottom {
+    background-image: url('../assets/home-splash.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 51rem;
+    position: relative;
+    display: flex;
+    align-content: center;
+    .cloud-background {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: cover;
+      background-size: contain;
+    }
+    .content {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      margin: 0 auto;
+      text-align: center;
+      .title, .text {
+        color: white;
+      }
+      .text {
+        line-height: 1.5;
+        font-family: $unit-roundedRg;
+      }
+      .cta-blue {
+        margin: 1.66rem auto 0;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      height: 40rem;
+      .content {
+        top: 45%;
       }
     }
   }
