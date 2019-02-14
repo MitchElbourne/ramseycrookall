@@ -149,15 +149,21 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 2rem 0;
   z-index: 99;
-  flex-direction: row; }
+  flex-direction: row;
+  transition: all 300ms linear; }
   header .container nav {
     display: flex;
     padding: 0; }
     header .container nav .navbar-brand {
       width: 10rem;
       margin-right: 0; }
+  header.scrolled {
+    transition: all 300ms linear;
+    background-color: #99ccff;
+    box-shadow: 0 0 12px 0 #0066cc;
+    padding: 0.66rem; }
 
 main .content {
   margin: 0 auto;
@@ -347,6 +353,8 @@ footer section#container-top {
     display: flex;
     flex-direction: column;
     text-align: center; }
+    footer section#container-top .container .content .image-wrapper {
+      margin-bottom: 1.33rem; }
     footer section#container-top .container .content p {
       color: white; }
 footer section#container-bottom {

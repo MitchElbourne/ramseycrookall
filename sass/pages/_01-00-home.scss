@@ -4,9 +4,10 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 2rem 0;
     z-index: 99;
     flex-direction: row;
+    transition: all 300ms linear;
     .container {
       nav {
       display: flex;
@@ -16,6 +17,12 @@ header {
         margin-right: 0;
       }
     }
+  }
+  &.scrolled {
+    transition: all 300ms linear;
+    background-color: $disclaimer-blue;
+    box-shadow: 0 0 12px 0 $dark-blue;
+    padding: 0.66rem;
   }
 }
 
@@ -295,7 +302,7 @@ footer {
         flex-direction: column;
         text-align: center;
         .image-wrapper {
-          /// TODO:
+          margin-bottom: 1.33rem;
         }
         p {
           color: white;
