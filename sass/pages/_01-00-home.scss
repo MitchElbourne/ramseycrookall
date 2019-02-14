@@ -8,13 +8,12 @@ header {
     z-index: 99;
     flex-direction: row;
     .container {
-    nav {
+      nav {
+      display: flex;
       padding: 0;
       .navbar-brand {
         width: 10rem;
-      }
-      ul {
-        width: 100%;
+        margin-right: 0;
       }
     }
   }
@@ -27,12 +26,13 @@ main {
     flex-direction: column;
   }
   section#splash {
+    position: relative;
     background-image: url('../assets/home-splash.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 40rem;
-    position: relative;
+    height: 35rem;
+    z-index: -2;
     .cloud-background {
       position: absolute;
       width: 100%;
@@ -41,8 +41,61 @@ main {
       background-position: cover;
       background-size: contain;
     }
+    .small-cloud {
+      max-width: 15%;
+      position: absolute;
+    }
+    .cloud-1 {
+      left: 26%;
+      top: 20%;
+    }
+    .cloud-2 {
+      right: 26%;
+      top: 30%;
+    }
+    .balloon-house {
+      max-width: 25%;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+    }
+    @include media-breakpoint-down(lg) {
+      height: 30rem;
+      .cloud-1 {
+        left: 20%;
+        top: 25%;
+      }
+      .cloud-2 {
+        right: 20%;
+        top: 45%;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      height: 25rem;
+      .balloon-house {
+        max-width: 30%;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .balloon-house {
+        max-width: 35%;
+      }
+      .small-cloud {
+        max-width: 20%;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .balloon-house {
+        max-width: 40%;
+      }
+      .cloud-1 {
+        top: 40%;
+      }
+    }
   }
   section#stockmarket {
+    padding-top: 0;
     .container {
       .row {
         .content {
@@ -100,14 +153,10 @@ main {
   section#how-it-works {
     .container {
       .row {
-        .content {
-
-        }
         .panel-container {
-          margin: 0 auto;
+          margin: 5.33rem auto 0;
           display: flex;
           flex-direction: column;
-          margin-top: 5.33rem;
           .panel {
             display: flex;
             flex-direction: row;
@@ -165,8 +214,10 @@ main {
             }
           }
           @include media-breakpoint-down(md) {
+            margin-top: 2rem;
             .panel {
               flex-direction: column;
+              margin-bottom: 2rem;
               &:nth-of-type(even) {
                 flex-direction: column;
                 .image-wrapper {
@@ -220,7 +271,7 @@ main {
       }
     }
     @include media-breakpoint-down(lg) {
-      height: 40rem;
+      height: 35rem;
       .content {
         top: 45%;
       }

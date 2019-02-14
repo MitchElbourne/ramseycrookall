@@ -56,51 +56,53 @@ h1, .h1 {
   font-family: $unit-roundedBd;
   font-size: 3.137rem;
   line-height: 1.45;
-  // @include media-breakpoint-down(md) {
-  //   font-size: 2.369rem;
-  // }
-  // @include media-breakpoint-down(sm) {
-  //   font-size: 1.77rem;
-  // }
+  @include media-breakpoint-down(lg) {
+    font-size: 2.369rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.77rem;
+  }
 }
 h2, .h2 {
   font-family: $unit-roundedBd;
   font-size: 2.369rem;
   line-height: 1.45;
-  // @include media-breakpoint-down(md) {
-  //   font-size: 1.777rem;
-  // }
-  // @include media-breakpoint-down(sm) {
-  //   font-size: 1.33rem;
-  // }
+  @include media-breakpoint-down(lg) {
+    font-size: 1.777rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.33rem;
+  }
 }
 h3, .h3 {
   font-family: $unit-roundedBd;
   font-size: 1.777rem;
   line-height: 1.45;
-  // @include media-breakpoint-down(md) {
-  //   font-size: 1.333rem;
-  // }
-  // @include media-breakpoint-down(sm) {
-  //   font-size: 1rem;
-  // }
-
+  @include media-breakpoint-down(lg) {
+    font-size: 1.333rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.2rem;
+  }
 }
 h4, .h4 {
   font-family: $unit-roundedBd;
   font-size: 1.333rem;
   line-height: 1.45;
-  // @include media-breakpoint-down(md) {
-  //   font-size: 1rem;
-  // }
-  // @include media-breakpoint-down(sm) {
-  //   font-size: 0.9rem;
-  // }
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1rem;
+  }
 }
 h5, .h5 {
   font-family: $unit-roundedBd;
   font-size: 1rem;
   line-height: 1.45;
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+  }
 }
 h6, .h6 {
   font-family: $unit-roundedBd;
@@ -111,11 +113,17 @@ h6, .h6 {
 p, span, a {
   font-family: $soleilRg;
   font-size: 1rem;
-  // @include media-breakpoint-down(md) {
-  //   font-size: 0.9rem;
-  // }
+  @include media-breakpoint-down(lg) {
+    font-size: 0.9rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 0.8rem;
+  }
 }
 
 .p1 {
   font-size: 1.22rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 0.9rem;
+  }
 }
