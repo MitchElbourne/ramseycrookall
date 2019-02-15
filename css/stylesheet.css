@@ -134,7 +134,7 @@ html {
   color: white;
   margin-left: auto;
   border-radius: 4px;
-  padding: 0.66rem 1.2rem;
+  padding: 0.66rem 1.2rem 0.75rem;
   font-family: "unit-roundedBd", "system", "sans-serif";
   text-transform: uppercase;
   transition: background-color 200ms linear; }
@@ -142,6 +142,8 @@ html {
     background-color: rgba(0, 102, 204, 0.6);
     color: white;
     transition: background-color 200ms linear; }
+  .cta-blue:active {
+    background-color: #003366; }
 
 header {
   background-color: transparent;
@@ -220,16 +222,24 @@ main section#splash {
       max-width: 20%; } }
   @media (max-width: 575px) {
     main section#splash .balloon-house {
-      max-width: 40%; }
+      max-width: 40%;
+      position: relative;
+      top: 2rem; }
     main section#splash .cloud-1 {
-      top: 40%; } }
+      top: 40%;
+      left: 1.5rem; }
+    main section#splash .cloud-2 {
+      right: 1rem; } }
+  @media (max-width: 440px) {
+    main section#splash .balloon-house {
+      max-width: 50%; } }
 main section#stockmarket {
   padding-top: 0; }
   main section#stockmarket .container .row .content .text {
     margin-top: 1rem; }
   main section#stockmarket .container .row .content .cta-blue {
     margin: 1.33rem auto 0;
-    padding: 0.66rem 2.2rem; }
+    padding: 0.66rem 2.2rem 0.8rem; }
 main section#performance .container .row .content .image {
   margin: 0 auto;
   width: 60%;
@@ -344,7 +354,7 @@ main section#splash-bottom {
     main section#splash-bottom {
       height: 35rem; }
       main section#splash-bottom .content {
-        top: 45%; } }
+        top: 55%; } }
 
 footer section#container-top {
   background-color: #131d26; }

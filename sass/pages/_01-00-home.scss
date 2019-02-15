@@ -32,6 +32,7 @@ main {
     display: flex;
     flex-direction: column;
   }
+
   section#splash {
     position: relative;
     background-image: url('../assets/home-splash.svg');
@@ -95,12 +96,24 @@ main {
     @include media-breakpoint-down(xs) {
       .balloon-house {
         max-width: 40%;
+        position: relative;
+        top: 2rem;
       }
       .cloud-1 {
         top: 40%;
+        left: 1.5rem;
+      }
+      .cloud-2 {
+        right: 1rem;
+      }
+    }
+    @media (max-width: 440px) {
+      .balloon-house {
+        max-width: 50%;
       }
     }
   }
+
   section#stockmarket {
     padding-top: 0;
     .container {
@@ -111,12 +124,13 @@ main {
           }
           .cta-blue {
             margin: 1.33rem auto 0;
-            padding: 0.66rem 2.2rem;
+            padding: 0.66rem 2.2rem 0.8rem;
           }
         }
       }
     }
   }
+
   section#performance {
     .container {
       .row {
@@ -157,6 +171,7 @@ main {
       }
     }
   }
+
   section#how-it-works {
     .container {
       .row {
@@ -242,6 +257,7 @@ main {
       }
     }
   }
+
   section#splash-bottom {
     background-image: url('../assets/home-splash.svg');
     background-repeat: no-repeat;
@@ -280,16 +296,11 @@ main {
     @include media-breakpoint-down(lg) {
       height: 35rem;
       .content {
-        top: 45%;
+        top: 55%;
       }
     }
   }
 }
-
-
-
-
-
 
 
 footer {
