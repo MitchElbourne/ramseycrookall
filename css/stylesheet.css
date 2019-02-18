@@ -97,16 +97,25 @@ p, span, a {
     .p1 {
       font-size: 0.9rem; } }
 
-a {
-  color: #131d26;
-  transition: color 200ms linear; }
-  a:hover, a:focus {
-    color: #0066cc;
-    text-decoration: none;
-    transition: color 200ms linear; }
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-size: 18px; }
+  html body {
+    background-color: #79ACDF; }
 
 section {
-  padding: 3.33rem 0; }
+  padding: 3.33rem 0;
+  max-width: 1400px;
+  background-color: white;
+  margin: 0 auto; }
   @media (max-width: 767px) {
     section {
       padding: 2rem 0; } }
@@ -117,17 +126,13 @@ ul {
   ul li {
     padding: 0; }
 
-html {
-  font-size: 18px; }
-
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+a {
+  color: #131d26;
+  transition: color 200ms linear; }
+  a:hover, a:focus {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 200ms linear; }
 
 .cta-blue {
   background-color: #0066cc;
@@ -147,20 +152,21 @@ html {
 
 header {
   background-color: transparent;
-  max-width: 2000px;
   width: 100%;
   position: fixed;
   top: 0;
   padding: 2rem 0;
-  z-index: 99;
+  z-index: 9999;
   flex-direction: row;
   transition: all 300ms linear; }
-  header .container nav {
-    display: flex;
-    padding: 0; }
-    header .container nav .navbar-brand {
-      width: 10rem;
-      margin-right: 0; }
+  header .container {
+    margin: 0 auto; }
+    header .container nav {
+      display: flex;
+      padding: 0; }
+      header .container nav .navbar-brand {
+        width: 10rem;
+        margin-right: 0; }
   header.scrolled {
     transition: all 300ms linear;
     background-color: #99ccff;
@@ -178,7 +184,11 @@ main section#splash {
   background-size: cover;
   width: 100%;
   height: 35rem;
-  z-index: -2; }
+  z-index: -2;
+  max-width: 1400px;
+  margin: 0 auto; }
+  main section#splash > .container {
+    margin: 0 auto; }
   main section#splash .cloud-background {
     position: absolute;
     width: 100%;
@@ -243,7 +253,7 @@ main section#stockmarket {
 main section#performance .container .row .content .image {
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 3.55rem; }
+  margin-bottom: 3.5rem; }
 main section#performance .container .row .content .text {
   margin-top: 1rem; }
 main section#performance .container .row .panel-container {
@@ -252,18 +262,23 @@ main section#performance .container .row .panel-container {
   flex-direction: row;
   margin-top: 4rem; }
   main section#performance .container .row .panel-container .panel {
-    padding-right: 5.33rem; }
-    main section#performance .container .row .panel-container .panel:last-of-type {
-      padding-right: 0; }
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column; }
     main section#performance .container .row .panel-container .panel .image {
-      margin-bottom: 2.66rem; }
+      margin-bottom: 2rem;
+      max-width: 15rem;
+      align-self: center; }
   @media (max-width: 767px) {
     main section#performance .container .row .panel-container {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
       main section#performance .container .row .panel-container .panel {
-        padding: 0; }
+        padding: 0 1rem;
+        text-align: center; }
         main section#performance .container .row .panel-container .panel:first-of-type {
-          margin-bottom: 3.33rem; } }
+          margin-bottom: 2rem; } }
 main section#how-it-works .container .row .panel-container {
   margin: 5.33rem auto 0;
   display: flex;
@@ -272,7 +287,7 @@ main section#how-it-works .container .row .panel-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 6.33rem; }
+    margin-bottom: 3rem; }
     main section#how-it-works .container .row .panel-container .panel:nth-of-type(even) {
       flex-direction: row-reverse; }
       main section#how-it-works .container .row .panel-container .panel:nth-of-type(even) .image-wrapper {
@@ -283,7 +298,7 @@ main section#how-it-works .container .row .panel-container {
     main section#how-it-works .container .row .panel-container .panel .image-wrapper {
       flex-grow: 1;
       margin-right: 8.33rem;
-      min-width: 20rem; }
+      min-width: 16rem; }
     main section#how-it-works .container .row .panel-container .panel .panel-content {
       display: flex;
       flex-direction: column;
@@ -324,11 +339,12 @@ main section#splash-bottom {
   background-image: url("../assets/home-splash.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   width: 100%;
-  height: 51rem;
   position: relative;
   display: flex;
-  align-content: center; }
+  align-content: center;
+  padding: 24rem 0 6rem; }
   main section#splash-bottom .cloud-background {
     position: absolute;
     width: 100%;
@@ -337,10 +353,6 @@ main section#splash-bottom {
     background-position: cover;
     background-size: contain; }
   main section#splash-bottom .content {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
     margin: 0 auto;
     text-align: center; }
     main section#splash-bottom .content .title, main section#splash-bottom .content .text {
@@ -352,9 +364,16 @@ main section#splash-bottom {
       margin: 1.66rem auto 0; }
   @media (max-width: 1199px) {
     main section#splash-bottom {
-      height: 35rem; }
-      main section#splash-bottom .content {
-        top: 55%; } }
+      padding: 18rem 0 5rem; } }
+  @media (max-width: 991px) {
+    main section#splash-bottom {
+      padding: 15rem 0 4rem; } }
+  @media (max-width: 767px) {
+    main section#splash-bottom {
+      padding: 12rem 0 4rem; } }
+  @media (max-width: 575px) {
+    main section#splash-bottom {
+      padding: 10rem 0 3rem; } }
 
 footer section#container-top {
   background-color: #131d26; }
