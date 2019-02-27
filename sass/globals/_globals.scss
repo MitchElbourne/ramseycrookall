@@ -14,9 +14,6 @@ html {
 	body {
 		background-color: #79ACDF;
 	}
-	@include media-breakpoint-down(sm) {
-		//font-size: 20px;
-	}
 }
 
 section {
@@ -48,13 +45,14 @@ a {
 }
 
 .cta-blue {
-	background-color: $dark-blue;
-	color: white;
+	display: inline-block;
 	margin-left: auto;
-	border-radius: 4px;
 	padding: 0.66rem 1.2rem 0.75rem;
 	font-family: $unit-roundedBd;
 	text-transform: uppercase;
+	background-color: $dark-blue;
+	border-radius: 4px;
+	color: white;
 	transition: background-color 200ms linear;
 	&:hover, &:focus {
 		background-color: rgba($dark-blue, 0.6);

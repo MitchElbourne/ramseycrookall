@@ -5,16 +5,22 @@ header {
   top: 0;
   padding: 2rem 0;
   z-index: 9999;
-  flex-direction: row;
   transition: all 300ms linear;
   .container {
     margin: 0 auto;
+    padding: 0;
     nav {
-      display: flex;
       padding: 0;
+      width: 100%;
+      margin-bottom: 0;
+      vertical-align: middle;
       .navbar-brand {
-        width: 10rem;
-        margin-right: 0;
+        padding: 0;
+        height: 4.44rem;
+      }
+      .cta-blue {
+        float: right;
+        margin-top: 0.8rem;
       }
     }
   }
@@ -22,15 +28,14 @@ header {
     transition: all 300ms linear;
     background-color: $disclaimer-blue;
     box-shadow: 0 0 12px 0 $dark-blue;
-    padding: 0.66rem;
+    padding: 0.66rem 0;
   }
 }
 
 main {
   .content {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    -webkit-transform: translateX(-50%);
+    margin-left: 50%;
   }
 
   section#splash {
@@ -126,9 +131,12 @@ main {
           .text {
             margin-top: 1rem;
           }
-          .cta-blue {
-            margin: 1.33rem auto 0;
-            padding: 0.66rem 2.2rem 0.8rem;
+          .cta-container {
+            text-align: center;
+            .cta-blue {
+              margin: 1.33rem auto 0;
+              padding: 0.66rem 2.2rem 0.8rem;
+            }
           }
         }
       }
@@ -140,7 +148,8 @@ main {
       .row {
         .content {
           .image {
-            margin: 0 auto;
+            -webkit-transform: translateX(-50%);
+            margin-left: 50%;
             width: 60%;
             margin-bottom: 3.5rem;
           }
@@ -150,29 +159,15 @@ main {
         }
         .panel-container {
           margin: 0 auto;
-          display: flex;
-          flex-direction: row;
           margin-top: 4rem;
           .panel {
             padding: 0 2rem;
-            display: flex;
-            flex-direction: column;
             .image {
               margin-bottom: 2rem;
-              max-width: 15rem;
-              align-self: center;
-            }
-          }
-          @include media-breakpoint-down(sm) {
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            .panel {
-              padding: 0 1rem;
-              text-align: center;
-              &:first-of-type {
-                margin-bottom: 2rem;
-              }
+              min-width: 20rem;
+              max-width: 20rem;
+              margin-left: 50%;
+              -webkit-transform: translateX(-50%);
             }
           }
         }
@@ -184,34 +179,30 @@ main {
     .container {
       .row {
         .panel-container {
-          margin: 5.33rem auto 0;
-          display: flex;
-          flex-direction: column;
+          margin: 5.33rem 0;
           .panel {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             margin-bottom: 3rem;
-            &:nth-of-type(even) {
-              flex-direction: row-reverse;
-              .image-wrapper {
-                margin-right: 0;
-                margin-left: 8.33rem;
-              }
-            }
+            display: table;
             &:last-of-type {
               margin-bottom: 0;
             }
             .image-wrapper {
-              flex-grow: 1;
-              margin-right: 8.33rem;
+              display: table-cell;
               min-width: 16rem;
+              vertical-align: middle;
+              img {
+                max-width: 20rem;
+              }
+              &:nth-of-type(even) {
+                img {
+                  float: right;
+                }
+              }
             }
             .panel-content {
-              display: flex;
-              flex-direction: column;
-              align-self: center;
-
+              display: table-cell;
+              vertical-align: middle;
+              width: 45%;
               .title {
                 margin: 0;
               }
@@ -246,10 +237,8 @@ main {
           @include media-breakpoint-down(md) {
             margin-top: 2rem;
             .panel {
-              flex-direction: column;
               margin-bottom: 2rem;
               &:nth-of-type(even) {
-                flex-direction: column;
                 .image-wrapper {
                   width: 50%;
                   margin: 0 auto;
@@ -273,9 +262,7 @@ main {
     background-position: center center;
     width: 100%;
     position: relative;
-    display: flex;
-    align-content: center;
-    padding: 24rem 0 6rem;
+    padding: 25rem 0 6rem;
     .cloud-background {
       position: absolute;
       width: 100%;
@@ -285,7 +272,6 @@ main {
       background-size: contain;
     }
     .content {
-      margin: 0 auto;
       text-align: center;
       .title, .text {
         color: white;
@@ -319,12 +305,13 @@ footer {
     background-color: $footer-black;
     .container {
       .content {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+        transform: translate(-50%);
+        margin-left: 50%;
         text-align: center;
         .image-wrapper {
           margin-bottom: 1.33rem;
+          max-width: 20rem;
+          width: 100%;
         }
         p {
           color: white;
@@ -337,8 +324,6 @@ footer {
     padding: 3rem 0;
     .container {
       .content {
-        display: flex;
-        justify-content: space-between;
         .copyright {
           p {
             margin: 0;
@@ -346,52 +331,17 @@ footer {
           }
         }
         .privacy {
+          text-align: right;
           .legal-row {
-            display: flex;
-            flex-wrap: wrap;
             height: 100%;
             .legal-item {
-              align-self: center;
-              padding-left: 1rem;
-              &:first-of-type {
-                padding-left: 0;
-              }
+              padding-right: 15px;
               a {
                 color: $text-black;
                 transition: color 200ms linear;
                 &:hover, &:focus {
                   color: $dark-blue;
                   transition: color 200ms linear;
-                }
-              }
-            }
-          }
-        }
-        @include media-breakpoint-down(md) {
-          .copyright {
-            padding-right: 2rem;
-          }
-          .privacy {
-            .legal-row {
-              .legal-item {
-                margin-left: auto;
-                align-self: baseline;
-                &:last-of-type {
-                  padding-left: 0;
-                }
-              }
-            }
-          }
-        }
-        @include media-breakpoint-down(sm) {
-          flex-direction: column;
-          .privacy {
-            margin-top: 1rem;
-            .legal-row {
-              .legal-item {
-                margin-left: 0;
-                &:last-of-type {
-                  padding-left: 1rem;
                 }
               }
             }
