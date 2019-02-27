@@ -113,7 +113,7 @@ html {
 
 section {
   padding: 3.33rem 0;
-  max-width: 1400px;
+  max-width: 2000px;
   background-color: white;
   margin: 0 auto; }
   @media (max-width: 767px) {
@@ -185,7 +185,6 @@ main section#splash {
   width: 100%;
   height: 35rem;
   z-index: -2;
-  max-width: 1400px;
   margin: 0 auto; }
   main section#splash > .container {
     margin: 0 auto; }
