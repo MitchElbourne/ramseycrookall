@@ -1,6 +1,7 @@
 function navbarScrollEffect() {
   var navbar = $('.navbar');
   var scrolled = false;
+  console.log('hey');
 
   jQuery(window).on('scroll', _.throttle(function() {
     if (jQuery("header").offset().top > 10) {
@@ -11,7 +12,7 @@ function navbarScrollEffect() {
   }, 200));
 
   // For setting navbar scrolled on load
-  jQuery(window).ready(() => {
+  jQuery(window).ready(function() {
     if (jQuery("header").offset().top > 10) {
       jQuery("header").addClass("scrolled");
     } else {
