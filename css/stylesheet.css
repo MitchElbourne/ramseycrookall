@@ -151,6 +151,9 @@ a {
   .cta-blue:active {
     background-color: #003366; }
 
+* {
+  border: 1px solid rgba(128, 128, 128, 0.25); }
+
 header {
   background-color: transparent;
   width: 100%;
@@ -179,9 +182,6 @@ header {
     box-shadow: 0 0 12px 0 #0066cc;
     padding: 0.66rem 0; }
 
-main .content {
-  -webkit-transform: translateX(-50%);
-  margin-left: 50%; }
 main section#splash {
   position: relative;
   background-image: url("../assets/home-splash.svg");
@@ -274,52 +274,49 @@ main section#performance .container .row .panel-container {
       max-width: 20rem;
       margin-left: 50%;
       -webkit-transform: translateX(-50%); }
-main section#how-it-works .container .row .panel-container {
+main section#how-it-works .container .panel-container {
   margin: 5.33rem 0; }
-  main section#how-it-works .container .row .panel-container .panel {
+  main section#how-it-works .container .panel-container .panel {
     margin-bottom: 3rem;
     display: table; }
-    main section#how-it-works .container .row .panel-container .panel:last-of-type {
+    main section#how-it-works .container .panel-container .panel:last-of-type {
       margin-bottom: 0; }
-    main section#how-it-works .container .row .panel-container .panel .image-wrapper {
+    main section#how-it-works .container .panel-container .panel .image-wrapper {
       display: table-cell;
-      min-width: 16rem;
       vertical-align: middle; }
-      main section#how-it-works .container .row .panel-container .panel .image-wrapper img {
+      main section#how-it-works .container .panel-container .panel .image-wrapper img {
         max-width: 20rem; }
-      main section#how-it-works .container .row .panel-container .panel .image-wrapper:nth-of-type(even) img {
+      main section#how-it-works .container .panel-container .panel .image-wrapper:nth-of-type(even) img {
         float: right; }
-    main section#how-it-works .container .row .panel-container .panel .panel-content {
-      display: table-cell;
-      vertical-align: middle;
-      width: 45%; }
-      main section#how-it-works .container .row .panel-container .panel .panel-content .title {
+    main section#how-it-works .container .panel-container .panel .panel-content {
+      border: 1px solid red; }
+      main section#how-it-works .container .panel-container .panel .panel-content .title {
         margin: 0; }
-      main section#how-it-works .container .row .panel-container .panel .panel-content .text {
+      main section#how-it-works .container .panel-container .panel .panel-content .text {
         margin: 1rem 0 2rem; }
-      main section#how-it-works .container .row .panel-container .panel .panel-content .disclaimer {
+      main section#how-it-works .container .panel-container .panel .panel-content .disclaimer {
         font-size: 0.8rem;
         margin: 0;
         padding: 1.33rem;
         border: 1px solid #99ccff;
         border-radius: 4px;
         line-height: 1.6; }
-      main section#how-it-works .container .row .panel-container .panel .panel-content .cta-blue {
+      main section#how-it-works .container .panel-container .panel .panel-content .cta-blue {
         margin: 0 auto; }
   @media (max-width: 1199px) {
-    main section#how-it-works .container .row .panel-container .panel:nth-of-type(even) .image-wrapper {
+    main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
       margin-left: 2rem; }
-    main section#how-it-works .container .row .panel-container .panel .image-wrapper {
+    main section#how-it-works .container .panel-container .panel .image-wrapper {
       margin-right: 2rem; } }
   @media (max-width: 991px) {
-    main section#how-it-works .container .row .panel-container {
+    main section#how-it-works .container .panel-container {
       margin-top: 2rem; }
-      main section#how-it-works .container .row .panel-container .panel {
+      main section#how-it-works .container .panel-container .panel {
         margin-bottom: 2rem; }
-        main section#how-it-works .container .row .panel-container .panel:nth-of-type(even) .image-wrapper {
+        main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
           width: 50%;
           margin: 0 auto; }
-        main section#how-it-works .container .row .panel-container .panel .image-wrapper {
+        main section#how-it-works .container .panel-container .panel .image-wrapper {
           width: 50%;
           margin: 0 auto; } }
 main section#splash-bottom {
