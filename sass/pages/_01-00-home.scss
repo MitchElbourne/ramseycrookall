@@ -1,5 +1,5 @@
 * {
-  // border: 1px solid rgba(grey, 0.25)
+  border: 1px solid rgba(grey, 0.25)
 }
 header {
   background-color: transparent;
@@ -157,6 +157,7 @@ main {
     padding-top: 0;
     .container {
       .row {
+        width: 60%;
         .content {
           .text {
             margin-top: 1rem;
@@ -174,7 +175,7 @@ main {
     @include media-breakpoint-down(lg) {
       .container {
         .row {
-          // width: 80%;
+          width: 70%;
         }
       }
     }
@@ -183,6 +184,7 @@ main {
   section#performance {
     .container {
       .row {
+        width: 60%;
         .content {
           text-align: center;
           .image {
@@ -202,11 +204,12 @@ main {
     @include media-breakpoint-down(lg) {
       .container {
         .row {
-          // width: 75%;
+          width: 70%;
         }
       }
     }
   }
+
   section#performance-panels {
     .container {
       .row {
@@ -239,11 +242,13 @@ main {
     .container {
       .row {
         width: 100%;
-    }
+      }
     .panel-container {
       margin: 5.33rem 0;
       .panel {
-        display: table;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -258,8 +263,6 @@ main {
           }
         }
           .panel-content {
-            display: table-cell;
-            vertical-align: middle;
             .title {
               margin: 0;
             }
@@ -280,34 +283,34 @@ main {
           }
         }
 
-        @include media-breakpoint-down(lg) {
-          .panel {
-            &:nth-of-type(even) {
-              .image-wrapper {
-                margin-left: 2rem;
-              }
-            }
-            .image-wrapper {
-              margin-right: 2rem;
-            }
-          }
-        }
-        @include media-breakpoint-down(md) {
-          margin-top: 2rem;
-          .panel {
-            margin-bottom: 2rem;
-            &:nth-of-type(even) {
-              .image-wrapper {
-                width: 50%;
-                margin: 0 auto;
-              }
-            }
-            .image-wrapper {
-              width: 50%;
-              margin: 0 auto;
-            }
-          }
-        }
+        // @include media-breakpoint-down(lg) {
+        //   .panel {
+        //     &:nth-of-type(even) {
+        //       .image-wrapper {
+        //         margin-left: 2rem;
+        //       }
+        //     }
+        //     .image-wrapper {
+        //       margin-right: 2rem;
+        //     }
+        //   }
+        // }
+        // @include media-breakpoint-down(md) {
+        //   margin-top: 2rem;
+        //   .panel {
+        //     margin-bottom: 2rem;
+        //     &:nth-of-type(even) {
+        //       .image-wrapper {
+        //         width: 50%;
+        //         margin: 0 auto;
+        //       }
+        //     }
+        //     .image-wrapper {
+        //       width: 50%;
+        //       margin: 0 auto;
+        //     }
+        //   }
+        // }
       }
     // }
     }

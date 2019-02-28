@@ -1,7 +1,6 @@
 function navbarScrollEffect() {
   var navbar = $('.navbar');
   var scrolled = false;
-  console.log('hey');
 
   jQuery(window).on('scroll', _.throttle(function() {
     if (jQuery("header").offset().top > 10) {
