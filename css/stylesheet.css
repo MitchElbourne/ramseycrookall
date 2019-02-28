@@ -324,12 +324,15 @@ main section#performance-panels .container .row {
     margin-top: 4rem; }
     main section#performance-panels .container .row .panel-container .panel {
       padding: 0 2rem; }
-      main section#performance-panels .container .row .panel-container .panel .image {
-        margin-bottom: 2rem;
-        max-width: 30rem; }
+      main section#performance-panels .container .row .panel-container .panel .image-wrapper .image {
+        display: inline-block;
+        max-width: 30rem;
+        margin-bottom: 2rem; }
 @media (max-width: 991px) {
-  main section#performance-panels .container .row .panel-container .panel .image {
-    max-width: 20rem; } }
+  main section#performance-panels .container .row .panel-container .panel .image-wrapper {
+    text-align: center; }
+    main section#performance-panels .container .row .panel-container .panel .image-wrapper .image {
+      max-width: 20rem; } }
 @media (max-width: 767px) {
   main section#performance-panels .container .row {
     width: 100%; }
@@ -353,7 +356,8 @@ main section#how-it-works .container .panel-container {
     main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
       text-align: right; }
     main section#how-it-works .container .panel-container .panel:last-of-type {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      margin-top: 4rem; }
     main section#how-it-works .container .panel-container .panel .image-wrapper {
       width: 48%;
       display: inline-block; }
@@ -388,10 +392,16 @@ main section#how-it-works .container .panel-container {
       display: flex;
       flex-direction: column;
       text-align: center; }
+      main section#how-it-works .container .panel-container .panel .image-wrapper img {
+        max-width: 16rem; }
       main section#how-it-works .container .panel-container .panel:nth-of-type(even) {
         flex-direction: column-reverse; }
         main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
           text-align: center; }
+      main section#how-it-works .container .panel-container .panel:last-of-type {
+        margin-top: 0; }
+      main section#how-it-works .container .panel-container .panel:first-of-type {
+        padding-bottom: 2rem; }
       main section#how-it-works .container .panel-container .panel .image-wrapper {
         width: 100%; }
       main section#how-it-works .container .panel-container .panel .panel-content {

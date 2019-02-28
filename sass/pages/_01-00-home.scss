@@ -255,9 +255,12 @@ main {
           margin-top: 4rem;
           .panel {
             padding: 0 2rem;
-            .image {
-              margin-bottom: 2rem;
-              max-width: 30rem;
+            .image-wrapper {
+              .image {
+                display: inline-block;
+                max-width: 30rem;
+                margin-bottom: 2rem;
+              }
             }
           }
         }
@@ -268,8 +271,11 @@ main {
         .row {
           .panel-container {
             .panel {
-              .image {
-                max-width: 20rem;
+              .image-wrapper {
+                text-align: center;
+                .image {
+                  max-width: 20rem;
+                }
               }
             }
           }
@@ -314,6 +320,7 @@ main {
           }
           &:last-of-type {
             margin-bottom: 0;
+            margin-top: 4rem;
           }
           .image-wrapper {
             width: 48%;
@@ -363,12 +370,22 @@ main {
             display: flex;
             flex-direction: column;
             text-align: center;
-
+            .image-wrapper {
+              img {
+                max-width: 16rem;
+              }
+            }
             &:nth-of-type(even) {
               flex-direction: column-reverse;
               .image-wrapper {
                 text-align: center;
               }
+            }
+            &:last-of-type {
+              margin-top: 0;
+            }
+            &:first-of-type {
+              padding-bottom: 2rem;
             }
             .image-wrapper {
               width: 100%;
