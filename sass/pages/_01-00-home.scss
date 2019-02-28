@@ -1,5 +1,5 @@
 * {
-  border: 1px solid rgba(grey, 0.25)
+  // border: 1px solid rgba(grey, 0.25)
 }
 header {
   background-color: transparent;
@@ -33,6 +33,19 @@ header {
     box-shadow: 0 0 12px 0 $dark-blue;
     padding: 0.66rem 0;
   }
+  @include media-breakpoint-down(sm) {
+    .container {
+      nav {
+        padding: 0 0.33rem;
+        .navbar-brand {
+          height: 3rem;
+        }
+        .cta-blue {
+          margin-top: 0.33rem;
+        }
+      }
+    }
+  }
 }
 
 main {
@@ -55,6 +68,8 @@ main {
     @include media-breakpoint-down(sm) {
       .row {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -136,6 +151,7 @@ main {
         max-width: 40%;
         min-width: 40%;
         width: 100%;
+        left: 25%;
         top: 5rem;
       }
       .cloud-1 {
@@ -179,6 +195,13 @@ main {
         }
       }
     }
+    @include media-breakpoint-down(sm) {
+      .container {
+        .row {
+          width: 100%;
+        }
+      }
+    }
   }
 
   section#performance {
@@ -208,6 +231,19 @@ main {
         }
       }
     }
+    @include media-breakpoint-down(sm) {
+      .container {
+        .row {
+          width: 100%;
+          .content {
+            padding: 0;
+            .image {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   section#performance-panels {
@@ -231,7 +267,27 @@ main {
         .row {
           .panel-container {
             .panel {
-              .image {max-width: 20rem;}
+              .image {
+                max-width: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .container {
+        .row {
+          width: 100%;
+          .panel-container {
+            margin: 0;
+            padding: 0;
+            .panel {
+              padding: 0;
+              .image {
+                max-width: none;
+                width: auto;
+              }
             }
           }
         }
@@ -243,26 +299,28 @@ main {
       .row {
         width: 100%;
       }
-    .panel-container {
-      margin: 5.33rem 0;
-      .panel {
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-        .image-wrapper {
-          img {
-            max-width: 20rem;
+      .panel-container {
+        margin: 5.33rem 0;
+        .panel {
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+          display: table;
+          &:last-of-type {
+            margin-bottom: 0;
           }
-          &:nth-of-type(even) {
+          .image-wrapper {
+            width: 48%;
+            display: inline-block;
             img {
-              float: right;
+              max-width: 20rem;
             }
           }
-        }
           .panel-content {
+            display: table-cell;
+            vertical-align: middle;
+            width: 48%;
+            display: inline-block;
             .title {
               margin: 0;
             }
@@ -282,37 +340,34 @@ main {
             }
           }
         }
-
-        // @include media-breakpoint-down(lg) {
-        //   .panel {
-        //     &:nth-of-type(even) {
-        //       .image-wrapper {
-        //         margin-left: 2rem;
-        //       }
-        //     }
-        //     .image-wrapper {
-        //       margin-right: 2rem;
-        //     }
-        //   }
-        // }
-        // @include media-breakpoint-down(md) {
-        //   margin-top: 2rem;
-        //   .panel {
-        //     margin-bottom: 2rem;
-        //     &:nth-of-type(even) {
-        //       .image-wrapper {
-        //         width: 50%;
-        //         margin: 0 auto;
-        //       }
-        //     }
-        //     .image-wrapper {
-        //       width: 50%;
-        //       margin: 0 auto;
-        //     }
-        //   }
-        // }
       }
-    // }
+    }
+    @include media-breakpoint-down(md) {
+      .row {
+        .content {
+          padding: 0;
+        }
+      }
+      .container {
+        .panel-container {
+          margin-top: 2rem;
+          .panel {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            &:nth-of-type(even) {
+              flex-direction: column-reverse;
+            }
+            .image-wrapper {
+              width: 100%;
+            }
+            .panel-content {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 
