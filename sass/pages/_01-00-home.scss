@@ -1,6 +1,3 @@
-* {
-  // border: 1px solid rgba(grey, 0.25)
-}
 header {
   background-color: transparent;
   width: 100%;
@@ -453,25 +450,29 @@ footer {
     background-color: white;
     padding: 3rem 0;
     .container {
-      .content {
-        .copyright {
-          p {
-            margin: 0;
-            color: $text-grey;
+      .row {
+        margin: 0;
+        .content {
+          .copyright {
+            padding: 0;
+            p {
+              margin: 0;
+              color: $text-grey;
+            }
           }
-        }
-        .privacy {
-          text-align: right;
-          .legal-row {
-            height: 100%;
-            .legal-item {
-              padding-right: 15px;
-              a {
-                color: $text-black;
-                transition: color 200ms linear;
-                &:hover, &:focus {
-                  color: $dark-blue;
+          .privacy {
+            text-align: right;
+            .legal-row {
+              height: 100%;
+              .legal-item {
+                padding-right: 15px;
+                a {
+                  color: $text-black;
                   transition: color 200ms linear;
+                  &:hover, &:focus {
+                    color: $dark-blue;
+                    transition: color 200ms linear;
+                  }
                 }
               }
             }
