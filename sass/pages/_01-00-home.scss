@@ -154,12 +154,16 @@ main {
         left: 25%;
         top: 5rem;
       }
+      .small-cloud {
+        max-width: 25%;
+        width: 25%;
+      }
       .cloud-1 {
         top: 40%;
         left: 1.5rem;
       }
       .cloud-2 {
-        right: 1rem;
+        right: 0rem;
       }
     }
     @media (max-width: 440px) {

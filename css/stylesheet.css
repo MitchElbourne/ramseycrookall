@@ -268,11 +268,14 @@ main section#splash {
       width: 100%;
       left: 25%;
       top: 5rem; }
+    main section#splash .small-cloud {
+      max-width: 25%;
+      width: 25%; }
     main section#splash .cloud-1 {
       top: 40%;
       left: 1.5rem; }
     main section#splash .cloud-2 {
-      right: 1rem; } }
+      right: 0rem; } }
   @media (max-width: 440px) {
     main section#splash .balloon-house {
       max-width: 50%; } }
