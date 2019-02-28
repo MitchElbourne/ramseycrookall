@@ -350,13 +350,17 @@ main section#how-it-works .container .panel-container {
     box-shadow: none;
     border-radius: 0;
     display: table; }
+    main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
+      text-align: right; }
     main section#how-it-works .container .panel-container .panel:last-of-type {
       margin-bottom: 0; }
     main section#how-it-works .container .panel-container .panel .image-wrapper {
       width: 48%;
       display: inline-block; }
       main section#how-it-works .container .panel-container .panel .image-wrapper img {
-        max-width: 20rem; }
+        max-width: 20rem;
+        right: 0;
+        display: inline-block; }
     main section#how-it-works .container .panel-container .panel .panel-content {
       display: table-cell;
       vertical-align: middle;
@@ -386,6 +390,8 @@ main section#how-it-works .container .panel-container {
       text-align: center; }
       main section#how-it-works .container .panel-container .panel:nth-of-type(even) {
         flex-direction: column-reverse; }
+        main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
+          text-align: center; }
       main section#how-it-works .container .panel-container .panel .image-wrapper {
         width: 100%; }
       main section#how-it-works .container .panel-container .panel .panel-content {

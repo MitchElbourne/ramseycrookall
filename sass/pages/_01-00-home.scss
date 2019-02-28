@@ -310,6 +310,11 @@ main {
           box-shadow: none;
           border-radius: 0;
           display: table;
+          &:nth-of-type(even) {
+            .image-wrapper {
+              text-align: right;
+            }
+          }
           &:last-of-type {
             margin-bottom: 0;
           }
@@ -318,6 +323,8 @@ main {
             display: inline-block;
             img {
               max-width: 20rem;
+              right: 0;
+              display: inline-block;
             }
           }
           .panel-content {
@@ -362,6 +369,9 @@ main {
 
             &:nth-of-type(even) {
               flex-direction: column-reverse;
+              .image-wrapper {
+                text-align: center;
+              }
             }
             .image-wrapper {
               width: 100%;
