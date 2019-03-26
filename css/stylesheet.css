@@ -103,17 +103,21 @@ p, span, a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 18px; }
+  font-size: 18px;
+  width: 100%; }
   html body {
-    background-color: #79ACDF; }
+    background-color: #79ACDF;
+    width: 100%; }
+    html body main {
+      width: 100%; }
 
 section {
   padding: 3.33rem 0;
   max-width: 2000px;
+  width: 100%;
   background-color: white;
   margin: 0 auto; }
   @media (max-width: 767px) {
@@ -499,11 +503,9 @@ footer section#container-bottom {
       text-align: right; }
       footer section#container-bottom .container .row .content .privacy .legal-row {
         height: 100%; }
-        footer section#container-bottom .container .row .content .privacy .legal-row .legal-item {
-          padding-right: 15px; }
-          footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a {
-            color: #131d26;
+        footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a {
+          color: #131d26;
+          transition: color 200ms linear; }
+          footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a:hover, footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a:focus {
+            color: #0066cc;
             transition: color 200ms linear; }
-            footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a:hover, footer section#container-bottom .container .row .content .privacy .legal-row .legal-item a:focus {
-              color: #0066cc;
-              transition: color 200ms linear; }
