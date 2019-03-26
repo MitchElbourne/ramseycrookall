@@ -391,10 +391,9 @@ main section#how-it-works {
           font-size: 0.8rem;
           width: 100%;
           margin: 0;
-          padding: 1.33rem;
-          border: 1px solid #99ccff;
-          border-radius: 4px;
-          line-height: 1.6; }
+          border-top: 1px solid #99ccff;
+          line-height: 1.6;
+          padding-top: 2rem; }
         main section#how-it-works .container .panel-container .panel .panel-content .cta-blue {
           margin: 0 auto; }
   @media (max-width: 991px) {
