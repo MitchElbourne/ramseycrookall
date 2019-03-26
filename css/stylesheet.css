@@ -374,8 +374,9 @@ main section#how-it-works .container .panel-container {
         margin: 0; }
       main section#how-it-works .container .panel-container .panel .panel-content .text {
         margin: 1rem 0 2rem; }
-      main section#how-it-works .container .panel-container .panel .panel-content .disclaimer {
+      main section#how-it-works .container .panel-container .panel .panel-content .disclaimer p {
         font-size: 0.8rem;
+        width: 100%;
         margin: 0;
         padding: 1.33rem;
         border: 1px solid #99ccff;

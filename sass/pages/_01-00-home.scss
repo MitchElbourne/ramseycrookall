@@ -343,12 +343,15 @@ main {
               margin: 1rem 0 2rem;
             }
             .disclaimer {
-              font-size: 0.8rem;
-              margin: 0;
-              padding: 1.33rem;
-              border: 1px solid $disclaimer-blue;
-              border-radius: 4px;
-              line-height: 1.6;
+              p {
+                font-size: 0.8rem;
+                width: 100%;
+                margin: 0;
+                padding: 1.33rem;
+                border: 1px solid $disclaimer-blue;
+                border-radius: 4px;
+                line-height: 1.6;
+              }
             }
             .cta-blue {
               margin: 0 auto;
