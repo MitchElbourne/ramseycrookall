@@ -320,16 +320,16 @@ main section#performance .container .row {
         margin-bottom: 1rem; } }
 main section#performance-panels .container .row {
   width: 100%; }
-  main section#performance-panels .container .row .panel-container {
-    margin-top: 4rem; }
-    main section#performance-panels .container .row .panel-container .panel {
-      padding: 0 2rem; }
+  main section#performance-panels .container .row .panel-container .panel {
+    padding: 0 2rem; }
+    main section#performance-panels .container .row .panel-container .panel .image-wrapper {
+      min-height: 16rem; }
       main section#performance-panels .container .row .panel-container .panel .image-wrapper .image {
         display: inline-block;
-        max-width: 30rem;
+        height: 100%;
         margin-bottom: 2rem; }
 @media (max-width: 991px) {
-  main section#performance-panels .container .row .panel-container .panel .image-wrapper {
+  main section#performance-panels .container .row .panel-container .panel {
     text-align: center; }
     main section#performance-panels .container .row .panel-container .panel .image-wrapper .image {
       max-width: 20rem; } }
@@ -341,50 +341,85 @@ main section#performance-panels .container .row {
       padding: 0; }
       main section#performance-panels .container .row .panel-container .panel {
         padding: 0; }
-        main section#performance-panels .container .row .panel-container .panel .image {
-          max-width: none;
-          width: auto; } }
-main section#how-it-works .container .row {
-  width: 100%; }
-main section#how-it-works .container .panel-container {
-  margin: 5.33rem 0; }
-  main section#how-it-works .container .panel-container .panel {
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    display: table; }
-    main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
-      text-align: right; }
-    main section#how-it-works .container .panel-container .panel:last-of-type {
-      margin-bottom: 0;
-      margin-top: 4rem; }
-    main section#how-it-works .container .panel-container .panel .image-wrapper {
-      width: 48%;
-      display: inline-block; }
-      main section#how-it-works .container .panel-container .panel .image-wrapper img {
-        max-width: 20rem;
-        right: 0;
+        main section#performance-panels .container .row .panel-container .panel .image-wrapper {
+          min-height: 13rem;
+          height: 16rem; }
+          main section#performance-panels .container .row .panel-container .panel .image-wrapper .image {
+            max-width: none;
+            width: auto;
+            height: 13rem; } }
+main section#how-it-works {
+  padding-bottom: 0; }
+  main section#how-it-works .container .row {
+    width: 100%; }
+  main section#how-it-works .container .panel-container {
+    margin: 3rem 0 0; }
+    main section#how-it-works .container .panel-container .panel {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      display: table; }
+      main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
+        text-align: right; }
+      main section#how-it-works .container .panel-container .panel:last-of-type {
+        margin-bottom: 0;
+        margin-top: 4rem; }
+      main section#how-it-works .container .panel-container .panel .image-wrapper {
+        min-width: 48%;
+        max-width: 48%;
+        min-height: 20rem;
         display: inline-block; }
-    main section#how-it-works .container .panel-container .panel .panel-content {
-      display: table-cell;
-      vertical-align: middle;
-      width: 48%;
-      display: inline-block; }
-      main section#how-it-works .container .panel-container .panel .panel-content .title {
-        margin: 0; }
-      main section#how-it-works .container .panel-container .panel .panel-content .text {
-        margin: 1rem 0 2rem; }
-      main section#how-it-works .container .panel-container .panel .panel-content .disclaimer p {
-        font-size: 0.8rem;
-        width: 100%;
-        margin: 0;
-        padding: 1.33rem;
-        border: 1px solid #99ccff;
-        border-radius: 4px;
-        line-height: 1.6; }
-      main section#how-it-works .container .panel-container .panel .panel-content .cta-blue {
-        margin: 0 auto; }
-@media (max-width: 991px) {
+        main section#how-it-works .container .panel-container .panel .image-wrapper img {
+          max-width: 20rem;
+          height: 100%;
+          right: 0;
+          display: inline-block; }
+      main section#how-it-works .container .panel-container .panel .panel-content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 48%;
+        display: inline-block; }
+        main section#how-it-works .container .panel-container .panel .panel-content .title {
+          margin: 0; }
+        main section#how-it-works .container .panel-container .panel .panel-content .text {
+          margin: 1rem 0 2rem; }
+        main section#how-it-works .container .panel-container .panel .panel-content .disclaimer p {
+          font-size: 0.8rem;
+          width: 100%;
+          margin: 0;
+          padding: 1.33rem;
+          border: 1px solid #99ccff;
+          border-radius: 4px;
+          line-height: 1.6; }
+        main section#how-it-works .container .panel-container .panel .panel-content .cta-blue {
+          margin: 0 auto; }
+  @media (max-width: 991px) {
+    main section#how-it-works .row .content {
+      padding: 0; }
+    main section#how-it-works .container .panel-container {
+      margin-top: 2rem; }
+      main section#how-it-works .container .panel-container .panel {
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        main section#how-it-works .container .panel-container .panel .image-wrapper {
+          min-width: 100%; }
+          main section#how-it-works .container .panel-container .panel .image-wrapper img {
+            max-width: 16rem;
+            height: 16rem; }
+        main section#how-it-works .container .panel-container .panel:nth-of-type(even) {
+          flex-direction: column-reverse; }
+          main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
+            text-align: center; }
+        main section#how-it-works .container .panel-container .panel:last-of-type {
+          margin-top: 0; }
+        main section#how-it-works .container .panel-container .panel:first-of-type {
+          padding-bottom: 2rem; }
+        main section#how-it-works .container .panel-container .panel .image-wrapper {
+          width: 100%; }
+        main section#how-it-works .container .panel-container .panel .panel-content {
+          width: 100%; } }
+@media (max-width: 991px) and (max-width: 767px) {
   main section#how-it-works .row .content {
     padding: 0; }
   main section#how-it-works .container .panel-container {
@@ -393,20 +428,14 @@ main section#how-it-works .container .panel-container {
       display: flex;
       flex-direction: column;
       text-align: center; }
-      main section#how-it-works .container .panel-container .panel .image-wrapper img {
-        max-width: 16rem; }
-      main section#how-it-works .container .panel-container .panel:nth-of-type(even) {
-        flex-direction: column-reverse; }
-        main section#how-it-works .container .panel-container .panel:nth-of-type(even) .image-wrapper {
-          text-align: center; }
-      main section#how-it-works .container .panel-container .panel:last-of-type {
-        margin-top: 0; }
-      main section#how-it-works .container .panel-container .panel:first-of-type {
-        padding-bottom: 2rem; }
       main section#how-it-works .container .panel-container .panel .image-wrapper {
-        width: 100%; }
-      main section#how-it-works .container .panel-container .panel .panel-content {
-        width: 100%; } }
+        min-width: 100%;
+        min-height: 13rem;
+        height: 15rem; }
+        main section#how-it-works .container .panel-container .panel .image-wrapper img {
+          max-width: 13rem;
+          height: 13rem; } }
+
 main section#splash-bottom {
   background-image: url("../assets/home-splash.svg");
   background-repeat: no-repeat;
